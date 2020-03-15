@@ -8,28 +8,21 @@
                 <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
             </PatternLayout>
         </File>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
     </Appenders>
 
     <Loggers>
 
-        <Logger name = "me" level = "warn" additivity = "false">
-            <AppenderRef ref="LogToFile"/>
-        </Logger>
-
-        <Logger name = "me.liheng" additivity = "false">
-            <AppenderRef ref="LogToFile"/>
-        </Logger>
-
-        <Logger name = "me.liheng.ClassOne" additivity = "false">
-            <AppenderRef ref="LogToFile"/>
-        </Logger>
-
-        <Logger name = "me.liheng.ClassTwo" level = "error" additivity = "false">
+        <Logger name = "me.liheng.ClassOne" level = "error">
             <AppenderRef ref="LogToFile"/>
         </Logger>
 
         <Root level="error">
-            <AppenderRef ref="LogToFile"/>
+            <AppenderRef ref="Console"/>
         </Root>
     </Loggers>
 
