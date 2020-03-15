@@ -14,7 +14,19 @@ As the log output bears the name of the generating Logger, this naming strategy 
 
 &nbsp;
 
+### Logger and LoggerConfig ###
+* The Logger itself performs no direct actions. It simply has a name and is associated with a LoggerConfig. 
+* LoggerConfig objects are created when Loggers are declared in the logging configuration.
+* **A LoggerConfig is configured using the `<Logger>` element. The logger element must have a name attribute specified, will usually have a level attribute specified and may also have an additivity attribute specified.**
+* **Creation of Logger:**  Loggers are crested in code using `getLogger`. 
+* **Creation of LoggerConfig:** LoggerConfigs are created in xml using `<Logger>`. 
+
+&nbsp;
 ### Useful Links ###
 * [How to configure log4j2 using xml](https://mkyong.com/logging/log4j2-xml-example/)
 * [Careful with slf4j-api version 1.8.x](http://www.slf4j.org/codes.html)
+* [Log4j2 is not yet compatible with slf4j-api version 1.8.x](https://stackoverflow.com/questions/48829612/using-log4j2-10-and-slf4j-api-1-8-in-osgi-eclipse)
+* [log4j 2.x manual](https://logging.apache.org/log4j/2.x/manual/architecture.html)
+* [logger vs loggerConfig in log4j2](https://stackoverflow.com/questions/56093098/understanding-the-difference-between-logger-and-loggerconfig-in-log4j2)
+* [Configuring Log4j 2](https://logging.apache.org/log4j/2.x/manual/configuration.html)
 
