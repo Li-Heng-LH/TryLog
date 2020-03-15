@@ -12,7 +12,19 @@
 
     <Loggers>
 
-        <Logger name = "me.liheng" level = "debug" additivity = "false">
+        <Logger name = "me" level = "warn" additivity = "false">
+            <AppenderRef ref="LogToFile"/>
+        </Logger>
+
+        <Logger name = "me.liheng" additivity = "false">
+            <AppenderRef ref="LogToFile"/>
+        </Logger>
+
+        <Logger name = "me.liheng.ClassOne" additivity = "false">
+            <AppenderRef ref="LogToFile"/>
+        </Logger>
+
+        <Logger name = "me.liheng.ClassTwo" level = "error" additivity = "false">
             <AppenderRef ref="LogToFile"/>
         </Logger>
 
