@@ -1,11 +1,17 @@
 package me.liheng;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class TryLog {
 
-    public static void main(String[] args) {
+    private static final Logger logger = LoggerFactory.getLogger(TryLog.class);
 
-        ClassOne.log();
-        ClassTwo.log();
-        ClassOne.log();
+    public static void main(String[] args) throws InterruptedException {
+
+        for(int i = 0; i < 2000; i++) {
+            logger.info("This is the " + i + " time I say 'Hello World'.");
+            Thread.sleep(70);
+        }
     }
 }

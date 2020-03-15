@@ -62,7 +62,6 @@ Each logging request will be forwarded to all the appenders in that Logger's Log
 ### Layout ### 
 * The Layout is responsible for formatting the LogEvent, whereas an appender takes care of sending the formatted output to its destination. 
 
-
 &nbsp;
 
 ### References ###
@@ -72,4 +71,8 @@ Each logging request will be forwarded to all the appenders in that Logger's Log
 * [log4j 2.x manual](https://logging.apache.org/log4j/2.x/manual/architecture.html)
 * [logger vs loggerConfig in log4j2](https://stackoverflow.com/questions/56093098/understanding-the-difference-between-logger-and-loggerconfig-in-log4j2)
 * [Configuring Log4j 2](https://logging.apache.org/log4j/2.x/manual/configuration.html)
+
+
+* [Official Appenders Manual](https://logging.apache.org/log4j/2.x/manual/appenders.html)
+* [A Guide to Rolling File Appenders](https://www.baeldung.com/java-logging-rolling-file-appenders)
 
