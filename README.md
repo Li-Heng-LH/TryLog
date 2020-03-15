@@ -36,6 +36,7 @@ As the log output bears the name of the generating Logger, this naming strategy 
 * Log level is defined in LoggerConfig. LoggerConfigs will be assigned a Log Level. 
 * If no configuration file found, a ConsoleAppender attached to the root logger, and Level.ERROR is assigned.
 * If only the root logger is configured and has a Log Level, all the other Loggers reference the root LoggerConfig and use its Level.
+* If Logger ClassOne and ClassTwo have no configured LoggerConfig, they will use the configuration of LoggerConfig me.liheng.
 
 &nbsp;
 

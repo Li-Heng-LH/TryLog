@@ -12,7 +12,11 @@
 
     <Loggers>
 
-        <Root level="warn">
+        <Logger name = "me.liheng" level = "debug" additivity = "false">
+            <AppenderRef ref="LogToFile"/>
+        </Logger>
+
+        <Root level="error">
             <AppenderRef ref="LogToFile"/>
         </Root>
     </Loggers>
