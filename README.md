@@ -16,6 +16,12 @@ Log4j is configured using xml
 
 &nbsp;
 
+### SLF4J with 2 Log4j2 artifacts ###
+* log4j-slf4j-impl alone is enough.  
+![slf4j-log4j.png](./images/slf4j-log4j.png)
+
+&nbsp;
+
 ### Logger and LoggerConfig ###
 * The Logger itself performs no direct actions. It simply has a name and is associated with a LoggerConfig. 
 * LoggerConfig objects are created when Loggers are declared in the logging configuration.
