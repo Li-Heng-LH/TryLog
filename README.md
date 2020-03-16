@@ -12,6 +12,7 @@ Log4j is configured using xml
 ### How to make SLF4J 1.8.x work with Log4j 2? ###
 * Use Log4j2 version 2.13.1? => This does not work. 
 * Use slf4j-log4j12 version 1.8.x, and exclude log4j? => This does not work. Cannot find log4j.level.
+* Use [log4j-slf4j18-impl](https://logging.apache.org/log4j/2.0/log4j-slf4j-impl/index.html) => Works!
 
 &nbsp;
 

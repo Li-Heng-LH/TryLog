@@ -9,9 +9,9 @@ public class TryLog {
 
     public static void main(String[] args) throws InterruptedException {
 
-        for(int i = 0; i < 2000; i++) {
+        for(int i = 0; i < 20; i++) {
             logger.info("This is the " + i + " time I say 'Hello World'.");
-            Thread.sleep(70);
+//            Thread.sleep(70);
         }
     }
 }
